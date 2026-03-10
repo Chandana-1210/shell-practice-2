@@ -1,3 +1,4 @@
+#!/bin/bash
 nam1=sindhu
 nam2=bindhu
 
