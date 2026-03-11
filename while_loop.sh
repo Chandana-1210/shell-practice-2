@@ -5,7 +5,7 @@
 #         ((number++))
 #     done;
 
-$file_path=/home/ec2-user/file.txt
+file_path=/home/ec2-user/file.txt
 while read line
     do
         echo $line
