@@ -17,7 +17,7 @@ Validate(){
 }
 
 
-dnf install list available mysql
+dnf list installed mysql
 if [ $? -ne 0 ]; then 
     dnf install mysql-server -y
     Validate $? "MYSQL"
@@ -25,7 +25,7 @@ else
     echo "MYSQL already present......skipping...."
 fi
 
-dnf install list available nginx
+dnf list installed nginx
 if [ $? -ne 0 ]; then 
     dnf install nginx -y
     Validate $? "nginx"
