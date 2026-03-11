@@ -14,5 +14,17 @@ Validate(){
     fi
 }
 
+# dnf install list available mysql
+# if [ $? -ne 0 ]; then 
+#     dnf install mysql-server -y
+#     Validate $? "MYSQL"
+# else
+#     echo "MYSQL already present......skipping...."
+# fi
+
 dnf install mysql-server -y
 Validate $? "MYSQL"
+dnf install python3 -y
+Validate $? "python"
+dnf install redis -y
+Validate $? "redis"
