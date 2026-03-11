@@ -25,7 +25,7 @@
 
 DIR_name=$1
 if [ -d $DIR_name ]; then 
-    echo "Given $DIR_name exists already"
+    echo "Given $DIR_name exists"
 else
     echo "Given $DIR_name does not exists"
 fi
