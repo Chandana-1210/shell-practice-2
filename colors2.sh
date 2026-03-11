@@ -16,7 +16,7 @@ Validate(){
         echo "$R Error: Installing $2 is failure $N"
         exit 1
     else
-        echo "$G Installing $2 is SUCCESS $N"
+        echo -e "$G Installing $2 is SUCCESS $N"
     fi
 }
 
@@ -26,7 +26,7 @@ if [ $? -ne 0 ]; then
     dnf install mysql-server -y
     Validate $? "MYSQL"
 else
-    echo "$Y MYSQL already present......skipping....$N"
+    echo -e "$Y MYSQL already present......skipping....$N"
 fi
 
 dnf list installed nginx
@@ -34,5 +34,5 @@ if [ $? -ne 0 ]; then
     dnf install nginx -y
     Validate $? "nginx"
 else
-    echo "$Y nginx already present......skipping....$N"
+    echo -e "$Y nginx already present......skipping....$N"
 fi
