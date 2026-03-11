@@ -8,7 +8,7 @@ log_folder=/var/log/shell-script
 script_name=$( echo $0 | cut -d "." -f1 )
 log="$log_folder/$script_name.log" #/var/log/shell-script/app-logs.log
 
-mkdir -p log_folder
+mkdir -p $log_folder
 echo "script execution started at : $(date)" | tee -a $log
 if [ $user_id -ne 0 ]; then 
     echo -e "$R Error: Please run the script with root priveleges $N" | tee -a $log
