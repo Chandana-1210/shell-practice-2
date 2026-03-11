@@ -2,5 +2,5 @@
 str=DevOpsEngineer
 
 echo "${#str}"
-echo "${str0:6}"
+echo "${str:0:6}"
 echo "${str/Engineer/Admin}"
