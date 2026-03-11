@@ -23,9 +23,15 @@
 #     echo "Given $file_name does not exists"
 # fi
 
-DIR_name=$1
-if [ -d $DIR_name ]; then 
-    echo "Given $DIR_name exists"
-else
-    echo "Given $DIR_name does not exists"
+# DIR_name=$1
+# if [ -d $DIR_name ]; then 
+#     echo "Given $DIR_name exists"
+# else
+#     echo "Given $DIR_name does not exists"
+# fi
+
+file_name=$1
+
+if [ -f $file_name ] && [ -r $file_name ];
+    echo "file exists and readable"
 fi
