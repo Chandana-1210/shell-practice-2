@@ -8,10 +8,17 @@
 #     echo "given $number is greater than 10"
 # fi
 
-number=$1
+# number=$1
 
-if [ $(($number%2)) -eq 0 ]; then 
-    echo "Given $number is even number"
+# if [ $(($number%2)) -eq 0 ]; then 
+#     echo "Given $number is even number"
+# else
+#     echo "Given $number is odd number"
+# fi
+
+file_name=$1
+if[-f file_name ]; then 
+    echo "Given $file_name exists already"
 else
-    echo "Given $number is odd number"
+    echo "Given $file_name does not exists"
 fi
