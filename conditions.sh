@@ -32,6 +32,6 @@
 
 file_name=$1
 
-if [ -f $file_name ] && [ -r $file_name ];
+if [ -f $file_name ] && [ -r $file_name ]; then 
     echo "file exists and readable"
 fi
