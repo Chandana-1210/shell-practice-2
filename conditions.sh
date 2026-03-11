@@ -10,7 +10,8 @@
 
 number=$1
 
-if [ (($number%2)) -eq 0 ]; then 
+if [ $(($number%2)) -eq 0 ]; then 
     echo "Given $number is even number"
 else
     echo "Given $number is odd number"
+fi
