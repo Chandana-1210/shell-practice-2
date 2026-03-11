@@ -8,4 +8,4 @@
 Names=("shyama" "mahalsapathi" "dasaganu")
 echo "all names: ${Names[@]}"
 echo "first name : ${Names[0]}"
-echo "last name: ${Names[3]}
+echo "last name: ${Names[3]}"
