@@ -3,7 +3,7 @@
 #   do 
 #     echo "Number:$i"
 #   done;
-for i in {1...5}
+for i in {1..5}
     do
-        echo "Number:$i"
+        echo $i
     done;
