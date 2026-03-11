@@ -17,7 +17,7 @@
 # fi
 
 file_name=$1
-if [-f file_name ]; then 
+if [-f $file_name ]; then 
     echo "Given $file_name exists already"
 else
     echo "Given $file_name does not exists"
