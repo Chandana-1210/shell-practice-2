@@ -23,9 +23,9 @@
 #     echo "Given $file_name does not exists"
 # fi
 
-file_name=$1
-if [ -f $file_name ]; then 
-    echo "Given $file_name exists already"
+DIR_name=$1
+if [ -d $DIR_name ]; then 
+    echo "Given $DIR_name exists already"
 else
-    echo "Given $file_name does not exists"
+    echo "Given $DIR_name does not exists"
 fi
