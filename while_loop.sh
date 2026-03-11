@@ -11,7 +11,7 @@ file_path=/home/ec2-user/file.txt
 #         echo $line
 #     done < $file_path
 
-while IFS=read -r line
+while IFS= read -r line
     do
         echo $line
     done < $file_path
